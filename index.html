@@ -1,0 +1,626 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <meta content='width=device-width, initial-scale=1' name=viewport>
+    <meta content='IE=edge' http-equiv=X-UA-Compatible>
+    
+    <!-- Bootstrap CSS Font-Awesome -->
+    <link href="https://fonts.googleapis.com/css?family=Inria+Serif:300,300i,400,400i,700,700i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+    </head>
+    <!-- BODY -->
+  <body >
+      <header class="container-fluid ">
+        <!-- Nav tabs -->
+        <nav>
+        <ul class="nav nav-tabs fixed-top" id="navId">
+          <li class="nav-item ">
+            <a id="Lose" class="nav-link">Danger, Will Robinson! Danger.</a>
+          </li>
+          <li class="nav-item">
+            <a id="navl" class="nav-link list-group-item-action active" href="#">Home</a>
+          </li>
+          <li class="nav-item ">
+            <a id="navl" class="nav-link list-group-item-action" href="#About">About</a>
+          </li>
+          <li class="nav-item">
+            <a id="navl" class="nav-link list-group-item-action" href="#Season">Season</a>
+          </li>
+          <li class="nav-item">
+            <a id="navl" class="nav-link list-group-item-action" href="#Contact">Contact</a>
+          </li>
+
+        </ul>
+      </nav>
+      <!-- MAIN IMG -->
+        <div>
+          <img  src="https://wallpapercave.com/wp/wp2516773.jpg" class="img-fluid">
+        </div>
+      <!-- MAIN STR -->
+        <div id="main-str">
+          <span class="main-str-top">LOST</span>
+          <span class="main-str-mid">IN</span>
+          <span class="main-str-bot">SPACE</span>
+        </div>
+      </header>
+      <!-- MAIN -->
+      <main>
+        <section id="About" class="">
+          <div class="About-info">
+            <h1>Zagubieni w Kosmosie</h1>
+            <div class="About-info-text">
+              <p>
+                Zagubieni w kosmosie – amerykański serial fantastycznonaukowy, <br> 
+                remake serialu z 1965 roku <br>
+                (będącego luźną adaptacją noweli The Swiss Family Robinson). <br>
+                Opowiada historię rodziny kosmicznych kolonistów, <br>
+                których statek zboczył z kursu. <br>
+                <br>
+              </p>
+              <p>
+                W niedalekiej przyszłości kolonizacja kosmosu staje się możliwa, <br>
+                a rodzina Robinsonów zostaje wybrana, <br>
+                by jej członkowie zostali jednymi z pierwszych osadników.<br>
+                Niebawem pionierzy zmuszeni są do awaryjnego lądowania na najbliższej planecie,<br>
+                gdzie mierzą się z wieloma niebezpieczeństwami i cały czas usiłują znaleźć sposób ucieczki.<br>
+                Na statku Robinsonów uwięzieni zostają także dr Smith i Don West, <br>
+                którzy starają się czerpać korzyści z nowej sytuacji.<br>
+              </p>
+            </div>
+            <div  id="par" class="About-info-jpg">
+              <img id="par" class="About-info-jpg""  src="https://csn.naekranie.pl/wp-content/uploads/2018/03/LostInSpace_Vertical-Main_PRE_POL.jpg">
+            </div>
+          </div>
+        </section>
+        <section id="Season" class="">
+          <div class="Season-header">
+            <h1>
+              Season 
+            </h1>
+          </div>
+            
+            <div class="Season-list">
+
+              <div class="Season-one">
+                <div class="Season-one-button" id="Season-one-button">
+                  <button class="btn" role="button" data-toggle="button">Season 1</button>
+                </div>
+
+                <div id="Season-one-episods" class="Season-one-episods" style="display: none;">
+
+                  <button type="button" name="left" id="btn-left" class="btn btn-left" btn-lg btn-block"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+
+                    <ul class="list-inline row" id="Season-one">
+
+                      <li class="list-inline-item slider"  >
+                        <div class="Season-one-div" >  
+                          <img class="Season-one-img" src="data:image/jpeg;base64,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">
+                          <div class="Season-one-episods-header">
+                            <h2 class="Season-one-episods-header-h2">Odc : 1. Zderzenie</h2>
+                            <p class="Season-one-episods-header-p">63 min</p>
+                          </div>
+                          <p class="Season-one-episods-p">
+                            Podczas wyprawy do nowej kolonii kosmicznej 
+                            Robinsonowie zmuszeni są awaryjnie lądować 
+                            na nieznanej planecie, gdzie wyzwaniem będzie 
+                            nawet przetrwanie pierwszej nocy.
+                          </p>
+                        </div>
+                      </li>
+
+                      <li class="list-inline-item slider">
+                        <div class="Season-one-div"> 
+                          <img class="Season-one-img" src="https://image.tmdb.org/t/p/original/mUgj1Ji93rkhBdYNGrLsMydURZd.jpg">
+                          <div class="Season-one-episods-header">
+                            <h2 class="Season-one-episods-header-h2">Odc : 2. Diamenty</h2>
+                            <p class="Season-one-episods-header-p">56min</p>
+                          </div>
+                          <p class="Season-one-episods-p">
+                            Kolejna katastrofa sprawia, że na planecie 
+                            Robinsonów pojawiają się nowi 
+                            rozbitkowie. Tymczasem rodzina próbuje 
+                            uratować swój statek z pomocą 
+                            tajemniczego towarzysza.
+                          </p>
+                        </div>
+                      </li>
+
+                      <li class="list-inline-item slider">
+                        <div class="Season-one-div">
+                          <img class="Season-one-img" src="https://occ-0-114-116.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABfoLC4gMDaLwQSkfp_I3S5mtsjShY0IDsF2AsQIb704xkCiZ-U3uVtB5yrRSJbe4TmlV6DETCY8eFKCgBxSKwpD6j3OHJcaC-t9zNR2eKvzaKtAk.jpg?r=a92">
+                          <div class="Season-one-episods-header">
+                            <h2 class="Season-one-episods-header-h2">Odc : 3. Plaga</h2>
+                            <p class="Season-one-episods-header-p" >55 min</p>
+                          </div>
+                          <p class="Season-one-episods-p">
+                            Retrospekcje rzucają nieco światła 
+                            na przeszłość doktor Smith. 
+                            Robinsonowie muszą poradzić sobie 
+                            z nowym zagrożeniem, gdy okazuje się, 
+                            że ze statku szybko znika paliwo.
+                          </p>
+                        </div>
+                      </li>
+
+                      <li class="list-inline-item slider">
+                        <div class="Season-one-div">
+                        <img class="Season-one-img" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUTExIVFRUXGBkaGBgYGBoaGBgbHhoaGRoaGBobHiggHRolGxgYITEhJSkrLi4uGh8zODMtNygtLisBCgoKDg0OGxAQGi0lHyUtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAKgBLAMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAEBQIDBgABB//EAEAQAAECBAQEBAUCBQMDAwUAAAECEQADBCEFEjFBIlFhcQYTgZEyobHB8ELRFCNS4fEHYpJygtIzorIkQ0Rjc//EABgBAAMBAQAAAAAAAAAAAAAAAAABAgME/8QAIhEBAQACAgMAAwEBAQAAAAAAAAECESExAxJBIlFhE3EE/9oADAMBAAIRAxEAPwD5mlDhxb81iVLTFQUWLMS/rBlFMyjOCkJVY7s4J0bp84KkzEhRIOVJDWHTT15xlUECFgEu7wwnL/lgJZ/dr9YUrPGe8GTmcEAuIo6c4sCKWWCP0gudTf8AT0gakxPLTmV/+zMNtQB9oprqxS5YClAswDguIoo0pJGZTB4mdD48nVC2YvYjn3AbvB8lwHUrM/8ASdOcBz5F/iGo+v1g1Kksq4cqcPtDSjOqUmXMSU7O/IjQvCKn+JPeGlUkZVW/SYWU6HUBzMEVj0dUqbRKcgt6xClDBn/NGj2dNaBXw0wutTK+KXnuL8j94O8X4qJslICQOJLm+wMK5VpajkdwQLtfoGcmKq1TyA4ynMkB9Tq5MEZSclU0aGNj4KuJfmqICEFMkM7kni/DGNqyybbGNxhNApMhlBRSAChjcK1ftBVZtFU0KCoKXmKmLO7Db3/aFi8LKzmy+YACzgAttvt1ilHiGdLQUEeYNlbjmW3hjRUgWZbqyy1qupIcvfZ73hM0KZKZKlS5slQSzKQFFJfVLsbl9jpCTH0J/g5nlrbzFjgIYjKR6MftBmJYSpM5kLUoFSnd7Nux6AQnxMH+GGbYuDbR9xD3+lSM9h/AXN2BF+oIgcpTYpfUd9YvyFQBYcix/vFa6dQuUkXGsDQTVrWUjKWveD/PKpKZaBfiCi5LgnkbBukVKQMsHeH1mUFFCQSdQSzgXt6l7QqM+ifE6BUs8IBFr/LQ9YAClGxAPcD5EMY12JVhmDKtTuRf+zX5RVM8KzPL83KtuRQX5v2ipjaWMumflMQ7KdmJB+x/eIVFIUgElLG4MHSsqXe/bY+8RxVEry0mWTmfiTsLaiAXspKWLWfnr8otpagg5dXa94Eb0giiSdTpCB3LaIzDYRBGlrfmkes9tT9e0DWB6qsJDXAAYDXe8DS5BUkqF7+w7RfMnZT7guNjDeRgcwS3AHwZjcaNqL3d9NYGPTLDWNVg2Mz5Uvy5c1aJfxLCWZWlyG6CMo94+i/6YUKZmecpYQUBPluAUqWS5SRuGHz6RU38Xl0l4l8RJnSVy1oKAqXYG6wtJeWon+nKVJPpyj58rWNJ4ip8oTMRMQUzBoC5bMRcNzBF+Q5xnFJuYLd3dLFaCXy3y6sbPyPtBnEoBiBlsx2D6C0VzqVV1OMz3DcX+GaL8Kqkh0LSQ5uT7i3b6xPZWlUyTxPoM332iyeopVy0Zu0F/wAOAokks+4t8oor08blhy10ADQG6eoZC+tmj2jG7OPzaJ1yOFxow0iqQtg50f8ADB8L49myuTa6xLIH1ADfPl3gdYLAtqr5xbJmH3MIns48Ci7loBplMpPeGM9PAo8wYEw6XmmISSwJueUGPRzoxk6lhuY8mygBBAZJUnYEjvESsEGGuCaLJ8RJ0tcxTiKVFAJ0zBi789IFMgnTU7CIT1mycxbNodrbQmUnLyexDWjcS62ZMQMpBUEgZXAF2AYjfeMNPFoZUU1aD15EagbwX9nnB8qVMVmz5UgG7XP94rk1s6UzKUALp1HqP3hmMXWuUAqUgu/EEsfUA6xUJKpgTmWDsBaw7RPsja+ixuYtRClbNc/E/Vte8eeKMOVJpC81xY5QCQSTbi2blBknw2kS/MKr2GXn2va33hZihnTKGYQgmWk3UDYcQZx94cEvLHyFDKdY5cjLyu1xEkI4H6RyS4HeKbGFEgpSwHWCJtVkkqdIJJYOd21HUB4roSS4U1jaBsep1qQMoJAJccra/nKD6dmz/wD07mvMXN8sLULIBu3MjrH0Cp8UTRYsn1H2j5fhNHOFF/KHxElZduEH3PaGXhDwnMnFTrCOBRHU7O7WeC2/HRj1OBXjqQJstVSMnmS7qKSHKdwoDvGLqEOAw2tGjk+FZwXMQpaUpKFJLp1JBFiPSEM90pTr9oGXl/ZeqWdSIJo6pQCkNZRv6aRFS1K/wNIvoqX+WqZyUB+e4gYjJTxVPA1O14uSbRWsPpA0WIoMilqKcyQkEXZ3ZwNnALtBI8QkJyJl8LZf7wRI8RIRJTKSgOCXBbcMXtcGAJ1TKClKSkjNqAzekK1htnibnvDemr1IkFABIUoEgWNna/LiMKN4PkBwG6+kU1vSwzisAOAANPy8TTIR/UPnBVLh4MpS2JLO/TaBZc2w/lv1aJ3tP/F86vzOAAL6ANE6aXq9yWIfW+/WKbAAgB+en+XjhPL31HxGz+3ygBeatYPxEB9+hiqbUEn4j3+kdMRmUS53Z4uSkAAEXh2mlnV5TK52PSPaaqCUkEOCb8/f9ohOmOnXTblEqNOquTWbWGXxKclVuEBy/oRZoiaMhyDfcR7iM9RWklwep0Fm7CJonFnJ1cPz9YRaerm/yiALsQe2kU4TaYg7hQi+omESyGBDa794owiVmmoS4BJ3003hnOjAoOZT6uX93jphtE8jKUDq+2kdOTzhLnQmily2GZRSebPFeN0QSErzA3AAa5dzBOEuNLnazjveK/EE9SsmZtW0t6fm8KRjOwNMgFaM2mYdd+UOcVpUleZK9xdrPptCWU7juIeimzMQctrjc82teFVZ9p4WspIlrsH1bUaOInU0UpKyvMosQwUNt+hMEmlIAF1NdJYb7NzhtIp5qwQpaMp2KQR7vaEmY29EVXW3dBYbO/v/AGiNdVqVIUk/rYW0YF9Br6wfieATUJKpa0TANQnUP3+0ZqavKm7nuf2hncLj3Aikukp0+0AEFwDqIZTJiVAjNlVyOnoYBlrTmtcdecOLhtTpEdSy86lIU5SSC7PlA6b7RGjCUjSLKapLkIZlak2O+kFVbqbeU1ZlBEqZmSlTOHbbR4KxrFJS5aQpU0rBcpRobWKraD7xn5UpUuZM/pIdxpq33jhOL2WR2LQtTbfHPcauTiyDIQEhaQgcSVEuw6npGWrl3YaEkgHa9h3g2bOKZbhzzfWAKwFhMcX9/aHGXly3dKFryqc+m0WSlE7u503gKYdvwxdRyy7iw27xTI1REVGOBtHioGhVKkPmVmYvZLO/P2hjMkhKBxAk3I3HeCMVw4SJmXOFWSo5SCHIdnBYwMimUpeUgjmT+0LTHsqh5gqtrXtfbY+hhKpLEjlb5xo/C2FeeVDOEZUu535ADd/3htb0cysXQmVMlmSkoUhSEFySm5JUC1yAW+cZkzk7P6N940dfgU6TTiapSTLIcB+JOZwC3VvpGIWsPpE6rOQwWo2te9zbVtPnfvEpyTlC3SX5ni/vFqy6S5tZoBqpJbdgwgUCK7/3i+lmKzNlB7h4qmIy31tGk8J06DLUuYU62fWz3bftFClNUhWUuGAZrNFdOo6JBKiQ0MscxRK0ZAnT9TM97ekBUdQlKS+r+1te8IvjsQo1S5qAsHMQSxHK2u+kWrQlSCocxvvybvFGITjNmguTwgB92/vEZtr8iNdQeREAWVhZDPZtPzaB6AjOnvBFaXQCQx/NIGoiy0w4c6OSsZy1939o8nx7IN4lNlX6wlTpKTOVZ39L+8eYrVqUlCTdla9hF5ldGb4h9IBxRI4COd+/KEyx7Sp1AKS7tmDtGvQpgkywX52YAxkqRLqTp8Q17x9CoJaZoKPhIsUA682MPW4fk7ZqZXGS6phUQ7XOpLm3oPnH07A61EuTLVN8tKlhw7Pe4AEfMPGtE+VIFkzACdBdnHVgdYeTMEkeZ/ELqZiwjjKAlza7AC5YDSFj26fFPw00Xi+tRUSlfw81Bno0TueaY+c4lQoMgz0KBBDlJBCgbEtzYvG3lUtFMmfxglTQCSQlbpD2uAD+e8Y/H5BlS6gCyS7BzbMSfztCyn5Lzx3hz8ZZUt0uNYDVZXqIuplkJ/LQRg2HmoqJcl2zrAUr+lOqj7A+rRUc0M0SrOfeDKLBJ80KSimmrzMywAkJbU5lkJIbrH2HCcEpKYPLQkED4lOpXdz9mjzGK0+WctszITzdRCX9Hf0i/Q7zNPlM7w2qVIUc3mKYAZbgDU/PfpGUnUqs7BJ9o+9VeHJIygAMGFhZg3tpGYxbDUkgpALSkktusu5PWFfHyvHLU0zfhrBjNQpM1BytZrl+dj9Yuxf/AE1nK45E1BBulCwUkPf4g4J9BGmwiSQkgk8gLN+8PxUhLtcbjlt+fhi5hNJyu3xOt8E4jLcqpVkDdBSsd2Soq9xCqnQUryqdJGqVAgjuDcR97XihS+hQdCLFP9Xqz8owfjerFUnzLDyzw8yk2LHcaH0hZYyJ0yAEQPTlE3YRSX+W0ZqRmzNG5b9YZUVUhKVKCipTC99d3eIyEZpbqYnYksW5H83iOcKISoHhslSQb23/AHgYs+TxGNR4JX/MUDoU92bpGYnDiUOpjQeE5mVZPRvQuD9YbW9Nl4inBcoIUokJSW2vqLbR8rmC8fTKuoCswzOCB3c6+kfNZ6eIiFLynExkrJ3YjbXvfaL1TgRZTN05f4gevlMoCz3cDm1/neKyvg6tAAstCipmAffUQ3xKh8sgbDvd9zCihU0wF93hjiVYpd1P0fnDKqZ09WQj9NgQ+rfN4soJdyzNYknYcmhapfTaGGFam7WeAfETxziByt05NE6kszhiLKvrzfq94HkLAmkqGtjFpWD9oQqNWvgZ3H06RRTKYgwTWfCbNp+PA0gkKBdoZzo8kTbabR7UTfSIU2kRqdISk0nKnNe+nWB8QW+Tcvf9vSL5CizEWIbp3jqpIygcrjrCjKdvJAuLtcXjbSJgssMlQHopt4xMnb0hzSYiXAUHAN+rde0OH5D2sppk0EJRmcvtqblnhdU4gqUpSeJExmdJCSLXYkEB+bR7ieJDgSkkBQLNtfQwvxJXmBmJUGD/AEifrTx52cUfhFb5aCCvNmOhmqmfJVh6QurawzP4hCgc6SouNCHLP1sW7GF9CgoJURZN32HeGsmrlzF/1FXEo3y5WAHTdoclyrrkvk4Z2XlKYb+DqZ6lah+lB9yzfQwbOpqUr8vyQFM/CpSXGmx17iC8FoUSPNmIUohSQBmFwz6Ea68to1vjuPLPP/z5Yc1tqCqUtIzGwJDPqbQ0fNMlA7Eq9gf3j5RhXitUiaZYQFqWAAok8JcD4WvqYfycdImSlrN5iiw3KWYEdHb3hzJi+gVlSA/YwnoynKbO5H7/AHMJq3EzmIHLWA5NeQE73H0h+watVdJaxD/SK5yUrYoOzFtfbnGFx7GwFgKNlaLCcrjkoCzg7xna2vmpWlcuYc6DwqFyzXsfS27QvYNrjKzLd7gAuQHZzqRrYWgBEtC0P8aVb/mnaM5g3iub5n81OdWitAG58mjSTcO//IpFZc1yg3QroQdIWwyM5OUqTyJHsYHUdYNxIlUxRKShR+JPI7sdxuDARS+kQDPDaPM60g22NgSbawZKpkp4yptGTq5/eAJWUFIzX5h2I6HaGFUshyyQCzA3735QvjFjJ54lHmT9YeeGM2clLAgOCW/qGx1hJPDqV3P1h54WlFSykci42aD41NqmZMSCXuSX5ddIx1QeIteNyMMCRMchyk83J5jk30jBLSdxChQdUp3f1iiYlgAd4PxVICmSLfloXz1gnRukUEKYcUEVwUQW+EWsdesRw6y3Zwxi4ywE2VaGVCKQSCpXIRfQLAU50H12iqYbFtNI8koc6wF8SmTHWotqR6XiakEEfn4YplS8xN269oNkB7MbQhXtUxlgJ1OsUUZ4gCHidUGhx4XmUyMy56RMUA6Ul8qepGhUbMDo4PZKxm+A9NvvyG/SPKtm0jcSqulUjOZWa2YgNZLPYdHjMYwiUSFSVHy1bHVJf5ghiINtLjZCkzCLfSKKmaXTsPlDVEniJHEALkfWAsRlHOlB2v6WgYTtdSfEn/qH1h9Mw1UsqmMAHNncgbHrCEI3huiapQyWsDdy6gecB59rVlM8pIDZGJZJc8u0AS6iZ56iggFDkOkKDkFNns7Zg948nBLhJS4ZiCbd23sQHMF4VKIBJs5J/O146PHhO3RZMPDL9pTVomzD5a5qlDXYJSBqyUsOQidNLTKGUFRG4Twj/k725PFvnB30zG556gD85wPiihLDPrtv6xWpHdhhMMS+dVKE5JB0FnL25OesbFE4ikBNzMJUSX0FhpoC0fOKyfcGNTjWKTJaUSVJlqCUJZgUkWHUg+0Z5XjTl8vk4uJYuc09KgHUygBzJhtgsuZOqPOWp8jhzpbQAchrGYpar+aFFktmvq1jfSGVSqZMRkYokpZkbrPNXPm0ZuZq6jEkZlBKgWGxBbo43gFGMpTc7EaftvAWDYUVWY6aCDp2A8Kj05Hry+8M0qvEaapSUhbE7EEMejgfeExoig5VEp/pUND0bnEF0SkHMkgjcGL0TUkWJR0F0+x+zQESVgKZoKmL27+kbbwlipSwux2sB6DeMRi8wkhwLGxH3H94lQVM12SpQ6I4T6kX+cED6Z4voUqleaEstLPq+XdwdhrGFUn36Qyw7CEkEqp1AkFl5XKVcy12hfMBDvCyOL0ziggC7cxfWLZVYoA3ud+nKIGYHv77h+/0ihTAghRIjLe3OUTNT3MN/Dk5SJjjXSFS/iPr9YYYRNKVunW8Vem96amZUzCGVbN1brtGHnAPGlVUEZgu52YjXS8ZyZqYWKMKaVEkPm2A9ztAAlO5hxiZ4svL6wLLpjlJ2jRQSil8R7QYuWFKCU3J9O4iumlOqGeHlCFAmXn1cFw9mDcmN3h6KldegJSUt2P7GA6QG5B0D/OHGLL/AJZGVh+0LKMs/UfeFRrhXQJcl31htIUkONejaevKFtMSHIiaV3POAnVqQwINyWMMPDmF+eFBMxKCFBRcEkhgOEaH4d+cKakmzhnPJolQTVAnKW39tL7awLxun1TCcPpJa/4gGcEqcJlKZLmwL3J9Dz9BkPEeHypBV5ahxTScgJOVJDs2zEsL6QuwurRKJSEcSi5Vb1JLOfWNNjWCrntMlS12QAoEpJJG7AukkNYjlBq3prllNMzLH6hbp0gWtDrSdvz9oLVLDsoMRqD9OhiioQAoNb8MS5p2k1tYY0cgt1GuxbvCw6RqsMAsVOXs/wBIcmzzZ+oqAVEJu6mL9BlbsIiuvJcDmfqYWSVqTM/mAAic5G2oPKLMKDJUDqkkHu5H2jpxvxv57xjP0tRWFBS1je/WF1XMK1XvEK0MX68w57DYRROqdvnEWuvLP5UES0mYhCjwlQCuzh/WNL4kq0rUWSkHkQQfnCzwxJUKqUpKcxSSoXtZKi/oWMMvEFdnWfOTMf8A3MfYhoiuPydsvlGcZiEjckEgeguY2FLSmakHMwsxa5HNtvWM5RlBmfGJYGhKSsvYBkh3Vyj6ZQ+HEZQ6lKIvxGz8iBY9y8GuBr8dktDMEtfx5ibMSPoP3hmJykpVnBGoYj7Q4oqpIWErloDPoAPXlBKsRlDNmTa4/wAwaSxc2llJuqUpIO+SZf5wGuhpy5Dj/mP/AJRrEVSJl9hs+kdOqUAMCGg0HzXFaVIUCC49DAMuS6rBz3A+ZtG2xuilzUkgpCxodPSMtTSEFYCxoWFnu/JwPe0L6Rxgs+olsSZWXrPCD6HeI4wkiYSw4uLhUFJvqQoa3+8arA6LhdCCr/ctaUJ9ANfpCfxRKDJIRLScxcyyCFWFy1ntBlODhUqQGzEgj3fqYAmK6PBAlBI3c9YrmIZtBGMjCQtAufWCaclixihuI9zBFLr0/wAxbf4JkBagFNZ2eA53xHvBqVhLsf2gOcA5hTtnj2fLkg3Jb53ghaMku+hN+0VUMgrU3VoKrV2Mk3D/ACBdg0XctDYbDpAK3fhvfnBqqNbEgg5SGOzQtE3bceg7fKHCKpKkAi763Fu7QbOFNdRLyKJS+pcFwzawopbO+4MaSqqv5cxHMH1tGblD6GA3SJHEIvo5fEpg8XKkgJCgHI1f7RyQNUki14EgsSW+V+v+Ynhsi75gbco9ri5ALG1rMY9w2bkM1WhCCwN7vb5tAPh1hktCCJqiQAOFSRcElkEPZ3BItpe8V1VZPnTM5WWFgVqYIR+lKf1GwDsUvrfWE1diqrJQsIByghOlkhDc9B2+sP8ADSgJAGUpbdJfqQSlj1jWa6i8YIwCqTUqVKmykzallZOJctK8oDOpKviINszgtcwFitCETGWhUthwqUoMehGUEF31OoaJYbUJl1wmFQSUtc8laOwv8J943uPYdh9QozlTU+ZkBWJaklRADBwxLsW6sOUYZZflpr/lvHjt8uWhSQQbM1utodVFWlMlTLSSOGxuPnrrA+M4nLlTEBMknKgANMBJYNmUGACgO7xkcWqULXnSs5v+kpb+8bYz17Xj45hzl3+k6VSpk1lqd1AknlfMfaCaGoeUtWjlSj0cv9zAGHTVqmAl1AO55AhrmI0k4CSUuXPIaBt/nDxrDy5bNcRoiStn4SQ21oX0qgXQsdobVczMVLALKYuDzvcbh4WVS5hsUAk/qAd+oOkOuy/K1PgGlUifMIskI+LUXPcat10hh4qmAAlXlEn/AG5T65WT8o7/AE/pFJkzFLsVKDDVgBsBqXJhX4vqs0zICQBzd/WM8nN5OyfBZaTOQvy1K4mSBo+pUSbMB9Y2JnTwbKCXOySfmWH1hXhtFMSnzMi/KQHUQlRFrM4GuYjnE6vHUaiVMV6EfVvpC3wV6jTYfTZgSolSjvmv7Bh+ax2H06ipaQ5udOXDGNHjCoR/6UpCO/EftFE/xFXFRPns92ShGUWawILaQJ221bhI1Ova8KanDB/kK/8AKM+jEa1es9X/AAl/+MNsKoqqZdc4gf8A80fYCAthazCEsS6ge5+5MIUSylShqQbPvyj6Evw9MMtR85alAOAEoDts7axiqunWhfG4Kg4cMW5G5vCsBvSYvImSwhgZxOigvXm7G2uqvSKsaxJT5SgBIKhZiCAwDjX1BBEZ+XwzwRzB97fWNNV0mbKtTFKgDY3uA7hh1Op0jfCz1RZbSxVQ1h3HbUH2gSbUFTkl4YVicrAjVIDb24T/APGBKJBKmSyOpu/2jmymsqUKxrF9JqLekVKTxEdTpF1N9oGvwbwlgNeZ2/eApwYl4uBFhv8AjPFK7k3MKIx7axagVDyzxEFyzM3qzwIiRmLHOOaiLtyaB0ygxSDfcMbdbd4tQClP6VEF7Eu1tyL7wpCvfSqdSyx/9xevJJ+/WDsGp3mM/Cpkkt8J7HSBytz/AOno9xr001EXBRCVKZWUtoLk9Rr6xXQmzjEsGloQplEljuLlvkIzEynUFBQY2uzcmMSSbkpfXRiNQf7wXhtYnIUqGUi4IJs2t4dyV3/EcrJAVqdvtAiUtv6RfISlZP8AMDuzbnd2/vF1egoDAguTcaxMzm9CYZXH21wT1J4mba31iioJEpQP6ikJ7k39Gh1Iqik5mSogMLX9Is8hCv8A6mpJTKB0FjNWBZCdxbVWzc9Lx5vCdkqcBmFaU5FByUjhLEhhlduZHvD3yZKDlXXyZKwwUBTrmJB5eYkhBPMgepjPY34pnTphOYpFwkJYBKTbKG1tv+8DYTj9RTBXkqQkq3KEKUmwDpUQSk22MXl/GuFx+tvi/g1MuUqtVVGclgCgSVSXT/UkrWSQCxsB0MY2uxMABEtQSjkmwPezg9ekA1eITZ15i1KXuVKJdy2+hhthnhuWtAWqbxH9LM3q9/lCufrOW2Gd1rGFIqZ03gRmKRsLgdy31MPsM8HqUJcycoELfhSQ4bUKVsdNPeNbWJlpkUiVS0EGWcxSMpUoZeItvr7xVNQhMseWotnBIJ0cEW9SInyZXHKRnznhbsq8RSkSZOWWAgpSrT/pIc/8o+fIjV+Kc5SwGZ9WuzEEP7RlpdoqMfjTSXXLlFCXPlhOrF08Kvo8eyp85OycvUPCqZiyzKRLBYSs4BfULVmZtLKzn/uMCy6qashGcsS21n3i/Z1YeeY4ycvqOGid/CJKVhIIJU6paUAEk3LiZp1tGLnKR5nCoKvcC47hW49I3GIy0olsbJQkAHKbABhxy1HL7R87nzVTJ7JJLB7Nf1blGd/rK5S3dbHwzISqo8w6oQw9f7E+8FeK5qE5AAN1HuRaBvDZAnEnl/b11MF4/wCWpRzKyWY5woP2sIJ0jbKVM1Je92geUpILm/yiGIIyqbMFjZQMBpN2MImuoK6WwLRo6OuSE5lJI7xjvDNOmfMMsKVmykgBINgQDqQHuI2dLhflF0onTdik5Ej539QYqB7Nx5wyCkHZz+8ZfH53mDMzKSQDubv+0PsToZ00ZZaZMsf0nNm/5LABPaEYwKZJzhbhKkkfpZ9QAyi9/rBTQ8NUAmqUVSgsgMFOAytmSbH1hdiWLTpSTJnU/lAMAoMd99QX5vGu8B0KFha2GcKAzquEhgzJ3Ub32589bjPhkLlnSY40Vmv2UVFvaDHOzpf+ftNvkcypQoS1JILJvyBdyDyuYtkoUoaD1Ogf2iKsMEqapBBCkqDoa59dNG3iNQplkhJF9C31jPO7u2Umiry7vqCT0vF1PLAmJ0IcdokFMLkaXd99hEhMZw/LUQj9hGKWJu4YXGrbX72hYGOnbWJT1As1216949CLBk2gnBTtoZFUHy5JiCSLtYnmyYhWyZYLkE9WAA6l4qRUhgdflEUYilRyKSwPOw+t4bbhIUz5VoX10P02hgVLZnJ6xFMtI0DbFixHOLBPAsfS2kI4FmTli5VpsQ4+WkU1yTmKMgBIDFNuV2hktYbp0s/ziMkIUnOCpzYvYgfK0CMpaz1TUBJSEBza+7dOUWJUhfEHSsC73Dg36iG8igSC5Ki3Jm7doCnUarswTfQH0PzNoNM/yk0rpKOZOUJcoFcwiyQwdrvmJCR3JgXF8QmJHkzcyjLdBSpThDOCA1rdH7wwph5WZSgC6VJACgkOWufb5wqqMOEwhZUM24A9ASdCS0VjdDGcf0mTTEF2N9LbRJSG1hmnDJsyYJaFFjuWH40GS/DiCVcalBKiknRLixUSSAzuwDlmO8Xs2fYF/wDpP1EaDBZzyYrVhcpCmL8SbPvuLE9rFvlAFFUKQVJSQA+/XSJzls0vDKY3dbifWg01KFEtLdI6fjRd5CFyyUMQQc3EkMPUwhKZq5IllgXce9x7RRLogjKTclV3ct2TE54b1dqnmklmjEeQpJGcp5MPrGCIjV4icktRfpvuW9GeMrMXyDReHTCLqamKgY2/+m/hNU6cJ60gSZRd1AHOsaBjsCxPp1jJ4AjOrywwUogAnrq/QM8bfGvEEuVKTSUhIloTxLIIKy7kjk5zExVvydtMJO701HjDEU+Wuack0JcZgTLWnmyg4Pyj43RTnnO7PmuA30jSYnVBFNLkJWVMkmaLtmUorbuHAhHQAGYCkAhi4Lt31f0iZ1yPJrfDb+Gg61KBYpDNo5OgBfofaPcSlpSp1SpA7zSVHuACTE/DPEtzZKAT3URl+SQR/wBxi7ETmV+rXt9T9oc6SzGIyJa3ySlZv9qVN/7gIQK4FjOLPcG0bOrpXFyAegD+qjGUxpB/Vfrb7CEG0wef5MsTJVMVDcomBR+lrRpsK8SonsmVMBmDVC3SsehPFy4XjDeF6Vky1BSkFSRxJ5kD4gbEddo1tXg0uageYyzsrKkHuCN+sVAYYhiyfhyGap8pZWUAsTlzG5NuUKaqUlJZKUJWzkD9PO7NYb2eAhRzkKBTMTMyghJmPnSCGYLCgSGG7wFU1q0giZJKQdVS1pUD0KSxHcQGN8OuqmrJGYpXlUpDbKA1/wDbGw8PYiZ9NKX5jLCsq+rWJbrYx8uwusXJSpKCOOX5aiQ9rO3W2sH4bOCZaQPiE0EKH6Rw/tGVdHjy6jVeK6JUsomkJUVcJWzkEAkHk9jfpGXpJImCb5g4spVrayT+e8G1GJrVLOYqXtxHR8zED29oUT5kzy1XLkFw/pfo3KI2y8uvZmaZfQkjc6e0EBwXPPf3vFsqjWA+gOt+8SlUZJAtc6+sVuMleIUpQyQ/EATwkWPf/EQTKADfeDK+UsLVnJLWbmLt9RC4zAb5fz2gpTtNJfVx2JD94tlBINw4EdHRbYaqoSwAzOBw3b06+0XSJiyQc5HQ5S/qBHR0I4J/iGa7vBUqckWMsKPPMQWfp+0dHQjDrm3JAa/3iKjZ8yXuDz/DHsdDKgwgEaPHgUkHhFh846OhVGQjwxhcyoq1pIUiWhOaYHYtoEvqHLn/ALTDeswZEgHiWQbJCiSOwJjo6NJCs1WXqUB1d76fXeBsQKRKASx0JI3L9faOjom9xFNKWtJAcM1xv01iE6smqVdJKX6Wbd+UeR0IpOQ1apYlKzJLKFrMNQfk0Zuaq8dHRWHRwZ4eWU1CCNsx9kqP2hguYNTc3vbmY6Oise17/EPWfzCVKZwNRoG+p6xdgWqxuGvbmf7x0dDy4ie2twSqutDfCCrN10HpYxZLrnJzAA8wf7R0dEzo1FTPHM+gP3aM9jN0/n7mOjoVDT+Dl5ZUouwADn+kOQ52aHlUpbk5L6BgGV1DD19Y6OijU+ctxYNYOwd7tw68/a8Sml7K/SLgByVm7H/akH3jo6Fs2MVqYlLWUMoNwtY6Hv8AOOjoyXFysRCj/MQydGZuguPS8dVVmYhKWKRqQdBuPtHR0FjLtSZmYKLtZm9RzgZSGIKjyfTntpHR0TEvMQnZSQkuSXGtw7A/KFanHxODHsdGhx//2Q==">
+                        <div class="Season-one-episods-header">
+                          <h2 class="Season-one-episods-header-h2">Odc : 4. Robinsonowie tu byli</h2>
+                          <p class="Season-one-episods-header-p" >60 min</p>
+                        </div>
+                        <p class="Season-one-episods-p">
+                          Robinsonowie nawiązują kontakt z inną 
+                          rodziną rozbitków. Gdy Judy dowiaduje 
+                          się, do czego doszło na
+                          pokładzie Śmiałka, Will rusza na pomoc swojemu 
+                          przyjacielowi.
+                        </p>
+                      </div>
+                      </li>
+
+                      <li class="list-inline-item slider" style="display: none;">
+                        <div class="Season-one-div">
+                          <img class="Season-one-img" src="https://occ-0-114-116.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABb1f3cf6U1v-3CWniW_HbX4uKP4iYeyt2QTCAj7vhx2T7W5kuYQqSpP6pvecJOw_ZBv-bu8oqT_D8dNOoSjClN7x03nqDEmWFr_AQvfJkBwhxW3e.jpg?r=823">
+                          <div class="Season-one-episods-header">
+                            <h2 class="Season-one-episods-header-h2">Odc : 5. Transmisja</h2>
+                            <p class="Season-one-episods-header-p">49min</p>
+                          </div>
+                          <p class="Season-one-episods-p">
+                            Rozbitkowie budują wieżę, aby nadać 
+                            sygnał do Śmiałka, Maureen bada 
+                            anomalię planetarną, a Will decyduje się 
+                            na trudną rozmowę z ojcem.
+                          </p>
+                        </div>
+                      </li>
+
+                      <li class="list-inline-item slider" style="display: none;">
+                        <div class="Season-one-div">
+                          <img class="Season-one-img" src="https://occ-0-37-33.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABR2A9zU10c0Sg3MOzVjjEUqaeiTt9nj0m2YXCzhKGaFn4I-fw9PhFlyMA4WSqTJ9fEPG-40p2V7NNpbtiNNA2SSqrZbSCBpMxliD1IekbHHylTF_.jpg?r=f4e">
+                          <div class="Season-one-episods-header">
+                            <h2 class="Season-one-episods-header-h2">Odc : 6. Koniec jest blisko</h2>
+                            <p class="Season-one-episods-header-p" >65 min</p>
+                          </div>
+                          <p class="Season-one-episods-p">
+                            Maureen zastanawia się, czy podzielić się 
+                            z innymi swoim odkryciem. Don staje 
+                            na czele misji szukającej paliwa. 
+                            Obecność robota wywołuje napięcia 
+                            w grupie rozbitków.
+                          </p>
+                        </div>
+                      </li>
+
+                      <li class="list-inline-item slider" style="display: none;">
+                        <div class="Season-one-div">
+                          <img class="Season-one-img" src="https://occ-0-37-33.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABfuzaWJIz54HV4nzNIsYZynOAmdVJy0A-_BG14DTXjz6IXH1BdFkl54dXvcCHelQGmO-lX_vxGX-WQ0KK8WD1jdITvdxTGpRaYhYGfytW5LMvWRm.jpg?r=148">
+                          <div class="Season-one-episods-header">
+                            <h2 class="Season-one-episods-header-h2">Odc : 7. Pod cieśnieniem</h2>
+                            <p class="Season-one-episods-header-p" >53 min</p>
+                          </div>
+                          <p class="Season-one-episods-p">
+                            Doktor Smith nadal realizuje swój tajny 
+                            plan. Aktywność sejsmiczna na planecie 
+                            doprowadza do olbrzymich zniszczeń 
+                            i zmusza dwie ekipy do podjęcia 
+                            bardzo trudnych decyzji.
+                          </p>
+                        </div>
+                      </li>
+
+                      <li class="list-inline-item slider" style="display: none;">
+                        <div class="Season-one-div">
+                          <img class="Season-one-img" src="https://occ-0-37-33.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABZiSsBGtKfP7ueERHu4YAz6B9aHT3JvMmJdFcY9AHW4UnKiX0hDoFNYRRKOBlaB2l7V5hxwHWfAlkqpmIDJ72TIu4XQZ9pSD0E95WlwVYXdPeKkp.jpg?r=15c">
+                          <div class="Season-one-episods-header">
+                            <h2 class="Season-one-episods-header-h2">Odc : 8. Trajektoria</h2>
+                            <p class="Season-one-episods-header-p" >58 min</p>
+                          </div>
+                          <p class="Season-one-episods-p">
+                            Maureen obmyśla, jak rozwiązać problem 
+                            z paliwem, ale realizacja jej planu 
+                            okazuje się zaskakująco trudna. Doktor Smith 
+                            zdaje sobie sprawę, że została 
+                            zdemaskowana.
+                          </p>
+                        </div>
+                      </li>
+
+                      <li class="list-inline-item slider" style="display: none;">
+                        <div class="Season-one-div">
+                          <img class="Season-one-img" src="https://occ-0-37-33.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABR98wG9wl6Wchs9fhfh5gdCG4A9zgmv6OZC136rskj2sl64qd8IFey3J-aIk0IfsjUli6mHCNUx4XED6L59I_UtBcPmLIwF6Eu77oXXIlvhDQrO1.jpg?r=c4d">
+                          <div class="Season-one-episods-header">
+                            <h2 class="Season-one-episods-header-h2">Odc : 9. Wskrzeszenie</h2>
+                            <p class="Season-one-episods-header-p" >48 min</p>
+                          </div>
+                          <p class="Season-one-episods-p">
+                            Judy rusza na poszukiwanie Maureen, 
+                            a Will i Penny przewodzą ekspedycji 
+                            do jaskiń. Doktor Smith opracowuje nowy 
+                            plan ucieczki.
+                          </p>
+                        </div>
+                      </li>
+
+                      <li class="list-inline-item slider" style="display: none;">
+                        <div class="Season-one-div">
+                          <img class="Season-one-img" src="https://occ-0-37-33.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABXp8rOTmIt0oXM0N2kxmtlWvtYin__FrEnhBBh0h5uotX2-7O_vUTHE_kXXyvJvAAmEUEV-gKJrTUHJJwMKqv4gmXzfF2JNad4i7nxZ6sMktDFZ_.jpg?r=4f7">
+                          <div class="Season-one-episods-header">
+                            <h2 class="Season-one-episods-header-h2">Odc : 10. Niebezpieczeństwo. Willu Robinsonie</h2>
+                            <p class="Season-one-episods-header-p" >51 min</p>
+                          </div>
+                          <p class="Season-one-episods-p">
+                            Czas do odlotu Śmiałka ucieka 
+                            nieubłaganie — Robinsonowie robią 
+                            wszystko, by opuścić planetę i uciec 
+                            z dala od doktor Smith.
+                          </p>
+                        </div>
+                      </li>
+
+                    </ul>
+
+                  <button type="button" name="right" id="btn-right" class="btn btn-right " btn-lg btn-block"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+
+                </div>
+
+              </div>
+
+              <div class="Season-two">
+                <div class="Season-two-button" id="Season-two-button">
+                  <button class="btn" role="button" data-toggle="button">Season 2</button>
+                </div>
+                
+                <div id="Season-two-episods" class="Season-two-episods" style="display: none;">
+
+                  <button type="button" name="left" id="btn-leftt" class="btn btn-left" btn-lg btn-block"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+
+                  <ul class="list-inline row" id="Season-two">
+
+                    <li class="list-inline-item slider">
+                      <div class="Season-two-div" >  
+                        <img class="Season-two-img" src="https://occ-0-1432-1433.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABTNdYeXHX5IjVvb2F1Ga24ZsH4bg3_-ioslaheTlusTmJOOrIE1QmHANAye0StGKIJLbRJnrmswmL75aojKmilRbOfRvb0UHLfbO-etk3ijEwiKV.jpg?r=dfe">
+                        <div class="Season-two-episods-header">
+                          <h2 class="Season-two-episods-header-h2">Odc : 1. Katastrofa</h2>
+                          <p class="Season-two-episods-header-p">50 min</p>
+                        </div>
+                        <p class="Season-two-episods-p">
+                          Siedem miesięcy później uwięzieni 
+                          na wodnej planecie Robinsonowie podejmują 
+                          się ryzykownej próby, by uruchomić Jowisza, 
+                          a Will przysięga odnaleźć robota.
+                        </p>
+                      </div>
+                    </li>
+
+                    <li class="list-inline-item slider">
+                      <div class="Season-two-div" >  
+                        <img class="Season-two-img" src="https://occ-0-1432-1433.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABfkoXdv9CB5kijzisXxM2meM2ML99TB6Ls9m6fhBC1TW069RZgZdFpCTwpVY9D80m4V5leBxYit0axclYCNbNq_LLSF6iF66P-HuAwzHE_uzRWFM.jpg?r=ae8">
+                        <div class="Season-two-episods-header">
+                          <h2 class="Season-two-episods-header-h2">Odc : 2. Wąwóz</h2>
+                          <p class="Season-two-episods-header-p">40 min</p>
+                        </div>
+                        <p class="Season-two-episods-p">
+                          Penny i Maureen zostają uwięzione 
+                          w tajemniczym metalowym wąwozie, 
+                          a Don pada ofiarą strasznej toksyny.
+                        </p>
+                      </div>
+                    </li>
+
+                    <li class="list-inline-item slider">
+                      <div class="Season-two-div" >  
+                        <img class="Season-two-img" src="https://occ-0-1432-1433.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABdDjvMOt9zmckrxqRkvRlm6niO0tULD8CuF1qdklAZUwFr7PSAauVa1L6oISvAQFYP76zY8Gq3ogc8Gu0fkkrSWZilDeauY36oLfkjf8gZ3IV--l.jpg?r=dac">
+                        <div class="Season-two-episods-header">
+                          <h2 class="Season-two-episods-header-h2">Odc : 3. Echa</h2>
+                          <p class="Season-two-episods-header-p">46 min</p>
+                        </div>
+                        <p class="Season-two-episods-p">
+                          Rozbudzone nadzieje pryskają, 
+                          kiedy Robinsonowie zdają sobie sprawę, 
+                          że na pokładzie Śmiałka coś jest nie tak. 
+                          Smith wykorzystuje szansę na oczyszczenie 
+                          swojego imienia.
+                        </p>
+                      </div>
+                    </li>
+
+                    <li class="list-inline-item slider">
+                      <div class="Season-two-div" >  
+                        <img class="Season-two-img" src="https://occ-0-1432-1433.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABWDCTNFnGVI9VQk_Q3WZc8VnjJMWS0c2I0IuFzVxgvbh-exXkX0v9omlHqVOSei-rOYIGBvr-iIBGH_1_cNBCz6oWW1ZlRvJD0m07P34dIsYmmSO.jpg?r=a6d">
+                        <div class="Season-two-episods-header">
+                          <h2 class="Season-two-episods-header-h2">Odc : 4. Strach na Wróble</h2>
+                          <p class="Season-two-episods-header-p">48 min</p>
+                        </div>
+                        <p class="Season-two-episods-p">
+                          Will stara się dowiedzieć, 
+                          co się stało z robotem, 
+                          a John i Judy wyruszają na pobliską planetę, 
+                          aby pomóc innym ocalałym.
+                        </p>
+                      </div>
+                    </li>
+
+                    <li class="list-inline-item slider" style="display: none;">
+                      <div class="Season-two-div" >  
+                        <img class="Season-two-img" src="https://occ-0-1432-1433.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABbvQyqKHSmdZEaINbxla093Exx4xc6NonUZPMsFBVglS-wNigbkFU6VDs4FziNhW-h2TJyOe-t_-qiAfiLrZ6fg9ooQ73OUCba9230CZjUF6_XJt.jpg?r=0e8">
+                        <div class="Season-two-episods-header">
+                          <h2 class="Season-two-episods-header-h2">Odc : 5. Bieg</h2>
+                          <p class="Season-two-episods-header-p">46 min</p>
+                        </div>
+                        <p class="Season-two-episods-p">
+                          Sytuacja Johna pogarsza się z każdą chwilą, co zmusza Judy do długiego i wyczerpującego biegu. Penny szpieguje Smith z pomocą dawnego znajomego.
+                        </p>
+                      </div>
+                    </li>
+
+                    <li class="list-inline-item slider" style="display: none;">
+                      <div class="Season-two-div" >  
+                        <img class="Season-two-img" src="https://occ-0-1432-1433.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABddJhXWJ3koAKnv1azI1E35TDa80jRr_d7vJDmOnPbmFAmaIY3zv1ZNznNr-rbf_TMtruVJ6VP4UcDX6icC9zaJl_42t81rvKiDXr4B2z50utOVO.jpg?r=54c">
+                        <div class="Season-two-episods-header">
+                          <h2 class="Season-two-episods-header-h2">Odc : 6. Odcięci</h2>
+                          <p class="Season-two-episods-header-p">42 min</p>
+                        </div>
+                        <p class="Season-two-episods-p">
+                          Na skutek działania żrącej substancji Penny, Smith i przyjaciele zostają uwięzieni w ciasnym pomieszczeniu. Will i Maureen ruszają z Adlerem na poszukiwania robota.
+                        </p>
+                      </div>
+                    </li>
+
+                    <li class="list-inline-item slider" style="display: none;">
+                      <div class="Season-two-div" >  
+                        <img class="Season-two-img" src="https://occ-0-1432-1433.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABT3sXx-ZyUY6JU_EODu8no8VUCuKsYYDCv2Zj5KeSTDVZYJjKfNNS5aWvwHcjRBXUEDuMIRNt5VlCJ-rcHXvcIBlAzY75oG0BVsEr3Z-NYY1GiTg.jpg?r=585">
+                        <div class="Season-two-episods-header">
+                          <h2 class="Season-two-episods-header-h2">Odc : 7. Ewolucja</h2>
+                          <p class="Season-two-episods-header-p">41 min</p>
+                        </div>
+                        <p class="Season-two-episods-p">
+                          John wykorzystuje nieoczekiwaną pomoc, aby namierzyć źródło tajemniczego sygnału przechwyconego przez statek. Will zaczyna podejrzewać, że Adler coś ukrywa.
+                        </p>
+                      </div>
+                    </li>
+
+                    <li class="list-inline-item slider" style="display: none;">
+                      <div class="Season-two-div" >  
+                        <img class="Season-two-img" src="https://occ-0-1432-1433.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABeW3PtRYMPyjRQsWVJSioMqEDGp5M_tyxMlw_v9odeGlsv96I7ucNuA9Hp7DsIY9YAuaJeDtW8gYbmstxw3IbWgdbbkp-xTpX5gE0qRgtVYFxUXY.jpg?r=731">
+                        <div class="Season-two-episods-header">
+                          <h2 class="Season-two-episods-header-h2">Odc : 8. Na Ratunek</h2>
+                          <p class="Season-two-episods-header-p">42 min</p>
+                        </div>
+                        <p class="Season-two-episods-p">
+                          Maureen staje na czele buntu, Hastings stawia Johnowi ultimatum, a Penny próbuje przekonać Willa, że robot się zmienił.
+                        </p>
+                      </div>
+                    </li>
+
+                    <li class="list-inline-item slider" style="display: none;">
+                      <div class="Season-two-div" >  
+                        <img class="Season-two-img" src="https://occ-0-1432-1433.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABaBtSArHiDmL_QIaaJuDmRJIVWwjyR9EMBA38GCp2_X7OitIJwxjN7HMkpb7jzXHKHU_p1yEurcGqznO5FIMO9S2lln_a8aGhah7t-q_yXsqklDT.jpg?r=6d0">
+                        <div class="Season-two-episods-header">
+                          <h2 class="Season-two-episods-header-h2">Odc : 9. Blef</h2>
+                          <p class="Season-two-episods-header-p">44 min</p>
+                        </div>
+                        <p class="Season-two-episods-p">
+                          Will i Penny usiłują ukryć roboty i rozmyślają nad kolejnym ruchem. Tymczasem Hastings zadaje silny cios Robinsonom.
+                        </p>
+                      </div>
+                    </li>
+
+                    <li class="list-inline-item slider" style="display: none;">
+                      <div class="Season-two-div" >  
+                        <img class="Season-two-img" src="https://occ-0-1432-1433.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABZVW4wqWaAiE1dX95StZ-uNlKL0xWe2ArGfSU0Avf7uwVXOjHNjLbwHFO9U2NkrPTDi2HUhrENcgd3YbH8OTwx5IdUYQo-lvbxJRHOxRv7vAfncx.jpg?r=78b">
+                        <div class="Season-two-episods-header">
+                          <h2 class="Season-two-episods-header-h2">Odc : 10. Dziewięćdziesiąt siedem</h2>
+                          <p class="Season-two-episods-header-p"></p>
+                        </div>
+                        <p class="Season-two-episods-p">
+                          Misja ratunkowa, której celem jest ocalenie Stracha na Wróble, przybiera nieoczekiwany obrót. Śmiałek popada w chaos. Judy opracowuje plan podróży do Alfa Centauri.
+                        </p>
+                      </div>
+                    </li>
+
+                  </ul>
+
+                  <button type="button" name="right" id="btn-rightt" class="btn btn-right " btn-lg btn-block"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+                </div>
+
+              </div>
+            </div>
+        </section>
+        <section id="Contact" class="">
+            <div class="btn-div">
+              <button type="button" name="media-btn" id="" class="btn btn-primary btn-media" btn-lg btn-block">MEDIA</button>
+              <div class="btn-span">
+
+                <div class="btn-span-item">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <a class="i"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                </div>
+
+                <div class="btn-span-item">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <a class="i"><i class="fa fa-wikipedia-w" aria-hidden="true"></i></a>
+                </div>
+
+                <div class="btn-span-item">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <a class="i"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
+                </div>
+
+                <div class="btn-span-item">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <a class="i"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                </div>
+   
+              </div>
+            </div>
+        </section>
+      </main>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS, ajax and parallax -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.7.2/rellax.min.js"></script>
+
+
+    <!-- script -->
+      <script>
+        $(window).scroll(function() {
+        var height = $(window).scrollTop();
+          if(height <= 1){
+            $("#Lose").css("opacity","1")
+            $("#Lose").css("padding-right", "100px")
+            $("#Lose").css("letter-spacing", '2px')
+          }else{
+            $("#Lose").css("opacity","0")
+            $("#Lose").css("transition","2s")
+          }
+        });
+
+        $(window).scroll(function() {
+          var height = $(window).scrollTop();
+          console.log(height)
+          if(height < 626){
+            $("ul li:nth-child(2) a").addClass("active")
+            $("ul li:nth-child(2) a").css("transition","1s")
+            }else{
+              $("ul li:nth-child(2) a").removeClass("active")
+              $("ul li:nth-child(2) a").css("transition","1s") 
+            }
+          if(height >= 626 && height < 1252){
+            $("ul li:nth-child(3) a").addClass("active")
+            $("ul li:nth-child(3) a").css("transition","1s")
+            }else{
+              $("ul li:nth-child(3) a").removeClass("active")
+              $("ul li:nth-child(3) a").css("transition","1s")
+            }
+          if(height >= 1252 && height < 1878){
+            $("ul li:nth-child(4) a").addClass("active")
+            $("ul li:nth-child(4) a").css("transition","1s")
+            }else{
+              $("ul li:nth-child(4) a").removeClass("active")
+              $("ul li:nth-child(4) a").css("transition","1s") 
+            }
+          if(height >= 1878){
+            $("ul li:nth-child(5) a").addClass("active")
+            $("ul li:nth-child(5) a").css("transition","1s")
+            }else {
+              $("ul li:nth-child(5) a").removeClass("active")
+              $("ul li:nth-child(5) a").css("transition","1s")
+            }
+        });
+        var rellax = new Rellax('#par');
+
+        let last = 5;
+        let first = 1;
+
+        let lastt = 5;
+        let firstt = 1;
+
+        let check1 = 0;
+        let check2 = 0; 
+
+        $("#Season-one-button").click(function() {
+
+          if(check1 == 0){
+          $("#Season-one-episods").css("display","block")
+          $("#Season-two-episods").css("display","none")
+
+          check2 = 0;
+          check1++;
+          }else{
+            $("#Season-one-episods").css("display","none")
+            check1 --;
+          }
+
+          $("#btn-left").click(function() {
+
+          if(last >= 5 && last <= 11 && first > 1 && first <= 7){
+            last--;
+            first--;
+            $("#Season-one li:nth-child("+last+")").css("display","none").css("transition", "1s ease-in-out");
+            $("#Season-one li:nth-child("+first+")").css("display","block").css("transition", "1s ease-in-out");
+          };
+          console.log(last)
+          console.log(first)
+        })
+         
+          $("#btn-right").click(function() {
+          
+          if(last >= 5 && last <= 10 && first >= 1 && first <= 7){
+            
+            $("#Season-one li:nth-child("+first+")").css("display","none");
+            $("#Season-one li:nth-child("+last+")").css("display","block");
+            last++;
+            first++;
+          };
+          console.log(last)
+          console.log(first)
+        })
+        })
+
+        $("#Season-two-button").click(function() {
+
+          if(check2 == 0){
+            $("#Season-two-episods").css("display","block")
+            $("#Season-one-episods").css("display","none")
+            check1 = 0;
+            check2++;
+          }else{
+            $("#Season-two-episods").css("display","none")
+            check2 --;
+          }
+
+          $("#btn-leftt").click(function() {
+
+            if(lastt >= 5 && lastt <= 11 && firstt > 1 && firstt <= 7){
+              lastt--;
+              firstt--;
+              $("#Season-two li:nth-child("+lastt+")").css("display","none");
+              $("#Season-two li:nth-child("+firstt+")").css("display","block");
+            };
+            })
+
+          $("#btn-rightt").click(function() {
+
+          if(lastt >= 5 && lastt <= 10 && firstt >= 1 && firstt <= 7){
+            
+            $("#Season-two li:nth-child("+firstt+")").css("display","none");
+            $("#Season-two li:nth-child("+lastt+")").css("display","block");
+            lastt++;
+            firstt++;
+          };
+
+          })
+          })
+
+      </script>
+  </body>
+</html>

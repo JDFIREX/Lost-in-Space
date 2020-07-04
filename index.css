@@ -1,0 +1,788 @@
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-button {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1498d7;
+  border: 0px none #1498d7;
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2971be;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #2971be;
+}
+
+::-webkit-scrollbar-track {
+  background: #E2E7EB;
+  border: 0px none #E2E7EB;
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-track:hover {
+  background: #E2E7EB;
+}
+
+::-webkit-scrollbar-track:active {
+  background: #E2E7EB;
+}
+
+::-webkit-scrollbar-corner {
+  background: none;
+}
+
+body {
+  font-family: 'Inria Serif', serif;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #E2E7EB;
+}
+
+body header {
+  width: 100%;
+  height: 100vh;
+}
+
+body header .img-fluid {
+  z-index: -1;
+  position: absolute;
+  left: -150px;
+  width: 850px;
+  height: 500px;
+  border-radius: 10px 10px 10px 10px;
+  -webkit-transform: rotate(75deg);
+          transform: rotate(75deg);
+}
+
+body header #navId {
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+body header #navId #Lose {
+  opacity: 0;
+  -webkit-transition: 4s;
+  transition: 4s;
+}
+
+body #main-str {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0px;
+  right: 100px;
+  width: 400px;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 39px;
+  letter-spacing: 40px;
+  line-height: 4.2rem;
+  font-weight: 300;
+  background-color: #E2E7EB;
+  z-index: 1;
+}
+
+body #main-str span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #main-str .main-str-mid::before {
+  content: ' ';
+  position: absolute;
+  top: 48px;
+  left: -14px;
+  width: 100%;
+  height: 2px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#2971be), color-stop(#1e7ec7), color-stop(#168bd0), color-stop(#1498d7), color-stop(#1ca5de), color-stop(#1ca5de), color-stop(#1ca5de), color-stop(#1ca5de), color-stop(#1498d7), color-stop(#168bd0), color-stop(#1e7ec7), to(#2971be));
+  background-image: linear-gradient(to right, #2971be, #1e7ec7, #168bd0, #1498d7, #1ca5de, #1ca5de, #1ca5de, #1ca5de, #1498d7, #168bd0, #1e7ec7, #2971be);
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+  -webkit-box-shadow: 0px 3px 20px 2px rgba(28, 165, 222, 0.75);
+          box-shadow: 0px 3px 20px 2px rgba(28, 165, 222, 0.75);
+}
+
+body #main-str .main-str-mid {
+  position: relative;
+  top: 0;
+  left: 0;
+  font-size: 32px;
+  letter-spacing: 30px;
+}
+
+body main {
+  width: 100%;
+  height: 300vh;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  top: 0;
+  left: 0;
+  background: #E2E7EB;
+}
+
+body main #About {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body main #About .About-info {
+  width: 100%;
+  height: 100%;
+}
+
+body main #About .About-info h1 {
+  font-style: bold;
+  font-size: 25px;
+  position: absolute;
+  letter-spacing: 12px;
+  top: 80px;
+  left: 100px;
+}
+
+body main #About .About-info .About-info-text {
+  position: absolute;
+  top: 165px;
+  left: 100px;
+}
+
+body main #About .About-info .About-info-jpg {
+  width: 250px;
+  height: 400px;
+  position: absolute;
+  top: -90px;
+  right: 80px;
+}
+
+body main #Season {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e2e7eb), color-stop(#cbcfd3), color-stop(#b5b7bb), color-stop(#9fa0a3), color-stop(#89898c), color-stop(#7a7a7d), color-stop(#6c6c6f), color-stop(#5e5e61), color-stop(#535457), color-stop(#484a4d), color-stop(#3d4044), to(#33373a));
+  background-image: linear-gradient(to bottom, #e2e7eb, #cbcfd3, #b5b7bb, #9fa0a3, #89898c, #7a7a7d, #6c6c6f, #5e5e61, #535457, #484a4d, #3d4044, #33373a);
+  z-index: 1;
+  -webkit-transition: 2s ease-in-out;
+  transition: 2s ease-in-out;
+}
+
+body main #Season .Season-header {
+  position: absolute;
+  top: 41px;
+  width: 100%;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body main #Season .Season-header h1 {
+  width: 100%;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main #Season .Season-list {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+body main #Season .Season-list .Season-one .Season-one-button {
+  position: absolute;
+  top: 100px;
+  left: 180px;
+  width: 300px;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main #Season .Season-list .Season-one .Season-one-button .btn {
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+body main #Season .Season-list .Season-one .Season-one-button button {
+  width: 190px;
+  height: 45px;
+  border: 1px solid #E2E7EB;
+  text-decoration: none;
+  background: #b5b7bb;
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+body main #Season .Season-list .Season-one .Season-one-episods {
+  position: relative;
+  top: 160px;
+  left: 0;
+  width: auto;
+  height: 400px;
+  margin: 30px;
+}
+
+body main #Season .Season-list .Season-one .Season-one-episods ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main #Season .Season-list .Season-one .Season-one-episods ul li {
+  margin: 0;
+  padding: 0;
+}
+
+body main #Season .Season-list .Season-one .Season-one-episods ul li .Season-one-div {
+  margin: 0;
+  padding: 0;
+  width: 250px;
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #E2E7EB;
+}
+
+body main #Season .Season-list .Season-one .Season-one-episods ul li .Season-one-div .Season-one-img {
+  width: 250px;
+  height: 180px;
+}
+
+body main #Season .Season-list .Season-one .Season-one-episods ul li .Season-one-div .Season-one-episods-header {
+  margin: 0;
+  padding: 0;
+  width: 250px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+}
+
+body main #Season .Season-list .Season-one .Season-one-episods ul li .Season-one-div .Season-one-episods-header .Season-one-episods-header-h2 {
+  margin: 0;
+  padding: 0;
+  width: 190px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+}
+
+body main #Season .Season-list .Season-one .Season-one-episods ul li .Season-one-div .Season-one-episods-header .Season-one-episods-header-p {
+  margin: 0;
+  padding: 0;
+  width: 60px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+}
+
+body main #Season .Season-list .Season-one .Season-one-episods ul li .Season-one-div .Season-one-episods-p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 250px;
+  height: 100px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+}
+
+body main #Season .Season-list .Season-two .Season-two-button {
+  position: absolute;
+  top: 100px;
+  right: 180px;
+  width: 300px;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main #Season .Season-list .Season-two .Season-two-button .btn {
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+body main #Season .Season-list .Season-two .Season-two-button button {
+  width: 190px;
+  height: 45px;
+  border: 1px solid #E2E7EB;
+  text-decoration: none;
+  background: #b5b7bb;
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+body main #Season .Season-list .Season-two .Season-two-episods {
+  position: relative;
+  top: 160px;
+  left: 0;
+  width: auto;
+  height: 400px;
+  margin: 30px;
+}
+
+body main #Season .Season-list .Season-two .Season-two-episods ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main #Season .Season-list .Season-two .Season-two-episods ul li {
+  margin: 0;
+  padding: 0;
+}
+
+body main #Season .Season-list .Season-two .Season-two-episods ul li .Season-two-div {
+  margin: 0;
+  padding: 0;
+  width: 250px;
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #E2E7EB;
+}
+
+body main #Season .Season-list .Season-two .Season-two-episods ul li .Season-two-div .Season-two-img {
+  width: 250px;
+  height: 180px;
+}
+
+body main #Season .Season-list .Season-two .Season-two-episods ul li .Season-two-div .Season-two-episods-header {
+  margin: 0;
+  padding: 0;
+  width: 250px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+}
+
+body main #Season .Season-list .Season-two .Season-two-episods ul li .Season-two-div .Season-two-episods-header .Season-two-episods-header-h2 {
+  margin: 0;
+  padding: 0;
+  width: 190px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+}
+
+body main #Season .Season-list .Season-two .Season-two-episods ul li .Season-two-div .Season-two-episods-header .Season-two-episods-header-p {
+  margin: 0;
+  padding: 0;
+  width: 60px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+}
+
+body main #Season .Season-list .Season-two .Season-two-episods ul li .Season-two-div .Season-two-episods-p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 250px;
+  height: 100px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+}
+
+body main #Season .btn {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 35px;
+  height: 300px;
+  background-color: #33373A;
+  border-radius: 3px;
+  text-decoration: none;
+  border: 2px solid #E2E7EB;
+  outline-style: none;
+}
+
+body main #Season .btn-left {
+  position: absolute;
+  top: 25px;
+  left: -20px;
+  z-index: 2;
+}
+
+body main #Season .btn-left .fa-angle-left {
+  font-size: 60px;
+  color: #E2E7EB;
+}
+
+body main #Season .btn-right {
+  position: absolute;
+  top: 25px;
+  right: -20px;
+  z-index: 2;
+}
+
+body main #Season .btn-right .fa-angle-right {
+  font-size: 60px;
+  color: #E2E7EB;
+}
+
+body main #Contact {
+  width: 100%;
+  height: 100vh;
+  background: #33373a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main #Contact .btn-div {
+  width: 100%;
+}
+
+body main #Contact .btn-div .btn-media {
+  display: none;
+  width: 100px;
+  height: 50px;
+  border-radius: 15px;
+  outline: none;
+  text-decoration: none;
+  -webkit-transition: 3s ease-in-out;
+  transition: 3s ease-in-out;
+}
+
+body main #Contact .btn-div .btn-span {
+  width: 100%;
+  height: 200px;
+  background: #cbcfd3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main #Contact .btn-div .btn-span .btn-span-item {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 0px 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main #Contact .btn-div .btn-span .btn-span-item span {
+  margin: 0;
+  padding: 0;
+  background: black;
+  position: absolute;
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+}
+
+body main #Contact .btn-div .btn-span .btn-span-item span:nth-child(1) {
+  width: 53px;
+  height: 1px;
+  position: absolute;
+  left: -2.5px;
+  top: -2px;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+body main #Contact .btn-div .btn-span .btn-span-item span:nth-child(2) {
+  width: 1px;
+  height: 53px;
+  position: absolute;
+  top: -2.5px;
+  left: 50px;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+
+body main #Contact .btn-div .btn-span .btn-span-item span:nth-child(3) {
+  width: 53px;
+  height: 1px;
+  position: absolute;
+  left: -2.5px;
+  top: 50px;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+}
+
+body main #Contact .btn-div .btn-span .btn-span-item span:nth-child(4) {
+  width: 1px;
+  height: 53px;
+  position: absolute;
+  top: -2.5px;
+  left: -2px;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+}
+
+body main #Contact .btn-div .btn-span .btn-span-item .fa {
+  font-size: 50px;
+  display: block;
+}
+
+body main #Contact .btn-div .btn-span .btn-span-item:hover span:nth-child(1) {
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+}
+
+body main #Contact .btn-div .btn-span .btn-span-item:hover span:nth-child(2) {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+}
+
+body main #Contact .btn-div .btn-span .btn-span-item:hover span:nth-child(3) {
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+}
+
+body main #Contact .btn-div .btn-span .btn-span-item:hover span:nth-child(4) {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+}
+
+body main #Contact .btn-div .btn-span .btn-span-item:nth-child(2) {
+  width: 67px;
+}
+
+body main #Contact .btn-div .btn-span .btn-span-item:nth-child(2) span:nth-child(1) {
+  left: -2px;
+  width: 70px;
+}
+
+body main #Contact .btn-div .btn-span .btn-span-item:nth-child(2) span:nth-child(2) {
+  position: absolute;
+  left: 67px;
+}
+
+body main #Contact .btn-div .btn-span .btn-span-item:nth-child(2) span:nth-child(3) {
+  position: absolute;
+  left: -2px;
+  width: 70px;
+}
+
+body main #Contact .btn-div .btn-span .btn-span-item:nth-child(2) span:nth-child(4) {
+  position: absolute;
+  left: -2px;
+}
+
+body main #Contact .btn-div .btn-span .btn-span-item:nth-child(4) span:nth-child(1) {
+  left: -2px;
+}
+
+body main #Contact .btn-div .btn-span .btn-span-item:nth-child(4) span:nth-child(3) {
+  left: -2px;
+}
+/*# sourceMappingURL=index.css.map */

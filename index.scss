@@ -1,0 +1,571 @@
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-button {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: #1498d7;
+  border: 0px none #1498d7;
+  border-radius: 100px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2971be;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #2971be;
+}
+::-webkit-scrollbar-track {
+  background: #E2E7EB;
+  border: 0px none #E2E7EB;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #E2E7EB;
+}
+::-webkit-scrollbar-track:active {
+  background: #E2E7EB;
+}
+::-webkit-scrollbar-corner {
+  background: none;
+}
+body{
+    font-family: 'Inria Serif', serif;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #E2E7EB ;
+
+    header{
+        width: 100%;
+        height: 100vh;
+        // IMG
+        .img-fluid{
+            z-index: -1;
+            position: absolute;
+            left: -150px;
+            width: 850px;
+            height: 500px;
+            border-radius: 10px 10px 10px 10px;
+            transform: rotate(75deg);    
+        }
+        #navId{
+            z-index: 2;
+            display: flex;
+            justify-content: flex-end;
+            #Lose{
+                opacity: 0;
+                transition: 4s;
+            }
+        }
+    }
+        // MAIN STR
+        #main-str{
+            margin : 0;
+            padding: 0;
+            position: absolute;
+            top: 0px;
+            right: 100px;
+            width: 400px;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size : 39px;
+            letter-spacing: 40px;
+            line-height: 4.2rem;
+            font-weight: 300;
+            background-color: #E2E7EB;
+            z-index: 1;
+            
+            span{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .main-str-mid::before{
+                content: ' ';
+                position: absolute;
+                top: 48px;
+                left: -14px;
+                width: 100%;
+                height: 2px;
+                background-image: linear-gradient(to right, #2971be, #1e7ec7, #168bd0, #1498d7, #1ca5de, #1ca5de, #1ca5de, #1ca5de, #1498d7, #168bd0, #1e7ec7, #2971be);            
+                filter : blur(1px);
+                box-shadow: 0px 3px 20px 2px rgba(28,165,222,0.75);
+
+            } 
+                .main-str-mid{
+                position: relative;
+                top :0;
+                left :0;
+                font-size : 32px;
+                letter-spacing: 30px;
+            }
+
+        }
+        // MAIN
+        main{
+            width: 100%;
+            height: 300vh;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            top:0;
+            left: 0;
+            background:#E2E7EB; 
+
+            #About{
+                width: 100%;
+                height: 100vh;
+                display: flex;  
+                .About-info{
+                  width: 100%;
+                  height: 100%;
+                  h1{
+                    font-style: bold;
+                    font-size: 25px;
+                    position: absolute;
+                    letter-spacing: 12px;
+                    top: 80px;
+                    left: 100px;
+                  }
+                  .About-info-text{
+                    position: absolute;
+                      top: 165px;
+                      left: 100px;
+                    }
+                  .About-info-jpg{
+                    width: 250px;
+                    height: 400px;
+                    position: absolute;
+                    top: -90px;
+                    right: 80px;
+                  }
+                  }
+                }
+            #Season{
+                position: relative;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100vh;
+
+                background-image: linear-gradient(to bottom, #e2e7eb, #cbcfd3, #b5b7bb, #9fa0a3, #89898c, #7a7a7d, #6c6c6f, #5e5e61, #535457, #484a4d, #3d4044, #33373a);
+                z-index: 1;
+                transition: 2s ease-in-out;
+
+                .Season-header{
+                  position: absolute;
+                  top: 41px;
+                  width: 100%;
+                  height: 40px;
+                  display: flex;
+
+                  h1{
+                    width: 100%;
+                    height: 40px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;;
+                  }
+                }
+                .Season-list{
+                  width: 100%;
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  
+
+                  .Season-one{
+                    .Season-one-button{
+                      position: absolute;
+                      top: 100px;
+                      left: 180px;
+                      width: 300px;
+                      height: 80px;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      .btn{
+                        margin: 0;
+                        padding: 0;
+                        color: black;
+                      }
+                      button{
+                        width: 190px;
+                        height: 45px;
+                        border : 1px solid #E2E7EB ;
+                        text-decoration: none;
+                        background: #b5b7bb;
+                        font-size: 24px;
+                        letter-spacing: 2px;
+                      }
+                    }
+                    .Season-one-episods{
+                      position: relative;
+                      top: 160px;
+                      left: 0;
+                      width: auto;
+                      height: 400px;
+                      margin: 30px;
+
+                      ul{
+                        margin: 0;
+                        padding: 0;
+                        width: 100%;
+                        height: 400px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        align-items: center;
+
+                        li{
+                          margin : 0;
+                          padding : 0;
+                          .Season-one-div{
+                            margin: 0;
+                            padding: 0;
+                            width: 250px;
+                            height: 350px;
+                            display: flex;
+                            flex-direction: column;
+                            color: #E2E7EB;
+
+                            .Season-one-img{
+                              width: 250px;
+                              height: 180px;
+                            }
+                            .Season-one-episods-header{
+                              margin: 0;
+                              padding: 0;
+                              width: 250px;
+                              height: 30px;
+                              display : flex;
+                              flex-direction: row;
+                              align-items: center;
+                              font-size : 14px;
+                              .Season-one-episods-header-h2{
+                                margin: 0;
+                                padding: 0;
+                                width: 190px;
+                                height: 30px;
+                                display: flex;
+                                justify-content: flex-start;
+                                align-items: center;
+                                font-size : 14px;
+                              }
+                              .Season-one-episods-header-p{
+                                margin: 0;
+                                padding: 0;
+                                width: 60px;
+                                height: 30px;
+                                display: flex;
+                                justify-content: flex-end;
+                                align-items: center;
+                                font-size : 14px;
+                              }
+
+                            }
+                            .Season-one-episods-p{
+                              display: flex;
+                              width: 250px;
+                              height: 100px;
+                              justify-content: center;
+                              align-items: center;
+                              font-size: 14px;
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  .Season-two{
+                    .Season-two-button{
+                      position: absolute;
+                      top: 100px;
+                      right: 180px;
+                      width: 300px;
+                      height: 80px;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      .btn{
+                        margin: 0;
+                        padding: 0;
+                        color: black;
+                      }
+                      button{
+                        width: 190px;
+                        height: 45px;
+                        border : 1px solid #E2E7EB ;
+                        text-decoration: none;
+                        background: #b5b7bb;
+                        font-size: 24px;
+                        letter-spacing: 2px;
+                      }
+                    }
+                    .Season-two-episods{
+                      position: relative;
+                      top: 160px;
+                      left: 0;
+                      width: auto;
+                      height: 400px;
+                      margin: 30px;
+
+                      ul{
+                        margin: 0;
+                        padding: 0;
+                        width: 100%;
+                        height: 400px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        align-items: center;
+
+                        li{
+                          margin : 0;
+                          padding : 0;
+                          .Season-two-div{
+                            margin: 0;
+                            padding: 0;
+                            width: 250px;
+                            height: 350px;
+                            display: flex;
+                            flex-direction: column;
+                            color: #E2E7EB;
+
+                            .Season-two-img{
+                              width: 250px;
+                              height: 180px;
+                            }
+                            .Season-two-episods-header{
+                              margin: 0;
+                              padding: 0;
+                              width: 250px;
+                              height: 30px;
+                              display : flex;
+                              flex-direction: row;
+                              align-items: center;
+                              font-size : 14px;
+                              .Season-two-episods-header-h2{
+                                margin: 0;
+                                padding: 0;
+                                width: 190px;
+                                height: 30px;
+                                display: flex;
+                                justify-content: flex-start;
+                                align-items: center;
+                                font-size : 14px;
+                              }
+                              .Season-two-episods-header-p{
+                                margin: 0;
+                                padding: 0;
+                                width: 60px;
+                                height: 30px;
+                                display: flex;
+                                justify-content: flex-end;
+                                align-items: center;
+                                font-size : 14px;
+                              }
+
+                            }
+                            .Season-two-episods-p{
+                              display: flex;
+                              width: 250px;
+                              height: 100px;
+                              justify-content: center;
+                              align-items: center;
+                              font-size: 14px;
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                .btn{
+                  margin: 0;
+                  padding: 0;
+                  position: absolute;
+                  width: 35px;
+                  height: 300px;
+                  background-color: #33373A;
+                  border-radius: 3px;
+                  text-decoration: none;
+                  border: 2px solid #E2E7EB;
+                  outline-style: none;
+                }
+                
+                .btn-left{
+                  position: absolute;
+                  top: 25px;
+                  left: -20px;
+                  z-index: 2;
+
+                  .fa-angle-left{
+                    font-size: 60px;
+                    color: #E2E7EB;
+                  }
+                }
+                .btn-right{
+                  position: absolute;
+                  top: 25px;
+                  right: -20px;
+                  z-index: 2;
+
+                  .fa-angle-right{
+                    font-size: 60px;
+                    color: #E2E7EB;
+                  }
+                }
+            }
+            #Contact{
+                width: 100%;
+                height: 100vh;
+                background : #33373a;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+
+                .btn-div{
+                  width: 100%;
+
+                  .btn-media{
+                    display: none;
+                    width: 100px;
+                    height: 50px;
+                    border-radius: 15px;
+                    outline : none;
+                    text-decoration : none;
+                    transition: 3s ease-in-out;
+                  }
+                  .btn-span{
+                    width: 100%;
+                    height: 200px;
+                    background:#cbcfd3; 
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    
+                    .btn-span-item{
+                      width: 50px;
+                      height: 50px;
+                      position: relative;
+                      top: 0;
+                      left: 0;
+                      padding: 0px 3px;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+
+                      span{
+                        margin: 0;
+                        padding : 0;
+                        background :black;
+                        position: absolute;
+	                      transition: transform .5s
+                      }
+                      span:nth-child(1){
+                        width: 53px;
+                        height: 1px;
+                        position: absolute;
+                        left: -2.5px;
+                        top: -2px;
+                        transform-origin: left;
+                      }
+                      span:nth-child(2){
+                        width: 1px;
+                        height: 53px;
+                        position: absolute;
+                        top: -2.5px;
+                        left: 50px;
+                        transform: scaleY(0);
+	                      transform-origin: bottom;
+                      }
+                      span:nth-child(3){
+                        width: 53px;
+                        height: 1px;
+                        position: absolute;
+                        left: -2.5px;
+                        top: 50px;
+                        transform-origin: right;
+                      }
+                      span:nth-child(4){
+                        width: 1px;
+                        height: 53px;
+                        position: absolute;
+                        top: -2.5px;
+                        left: -2px;
+                        transform: scaleY(0);
+                        transform-origin: top;
+                      }
+
+                     .fa{
+                        font-size : 50px;
+                        display: block;
+                      }
+                      
+                    }
+                    .btn-span-item:hover span:nth-child(1){
+                      transform: scaleX(0);
+                      transform-origin: right; 
+                      transition: transform .5s;
+                    }
+                    .btn-span-item:hover span:nth-child(2){
+                      transform: scaleY(1);
+	                    transform-origin: top; 
+	                    transition: transform .5s; 
+                    }
+                    .btn-span-item:hover span:nth-child(3){
+                      transform: scaleX(0);
+                      transform-origin: left; 
+                      transition: transform .5s;
+                    }
+                    .btn-span-item:hover span:nth-child(4){
+                      transform: scaleY(1);
+                      transform-origin: bottom; 
+                      transition: transform .5s;
+                    }
+                    .btn-span-item:nth-child(2){
+                      width: 67px;
+                      
+                      span:nth-child(1){
+                        left: -2px;
+                        width: 70px;
+                      }
+                      span:nth-child(2){
+                        position: absolute;
+                        left: 67px;
+                      }
+                      span:nth-child(3){
+                        position: absolute;
+                        left: -2px;
+                        width: 70px;
+                      }
+                      span:nth-child(4){
+                        position: absolute;
+                        left : -2px;
+                      }
+                    }
+                    .btn-span-item:nth-child(4){
+                      span:nth-child(1){
+                        left : -2px;
+                      }
+                      span:nth-child(3){
+                        left: -2px
+                      }
+                    }
+                  }
+                   
+                }
+            }
+        }
+    }
+
